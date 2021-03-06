@@ -1,0 +1,43 @@
+<html>
+	<head>
+    	<title>jQuery DOM Manipulation part-2</title>
+        <link rel="stylesheet" href="css/selector_style.css">
+    </head>
+    <body>
+    	<h2 class="myheading" id="firstH2">jQuery DOM Manipulation part-2</h2>
+        
+        <button type="button" id="btn1">Set Value</button>
+        <button type="button" id="btn2">Get Value</button><br>
+        
+        <div class="mydivs" id="firstdiv">
+        	<p id="p1" class="myp">This is <b>paragraph</b> of first division</p>
+        </div>
+              
+    </body>
+    <script src="../Abhirva JavaScript/js/jquery.js" type="text/javascript"></script>
+    <script>
+	
+		$(document).ready(function() {
+			
+			
+				
+		    // Set value btn
+        	$("#btn1").click(function()
+				{
+					//$("#p1").css("font-size","25px");
+					$("#p1").attr("class","P2class");
+        		});
+				
+			 // Get value btn
+        	$("#btn2").click(function()
+				{
+					//alert($("#p1").css("font-size"));
+					alert($("#p1").attr("class"));
+					alert($("#p1").attr("class","P2class"));
+        		});
+		});
+		
+		
+    
+    </script>
+</html>

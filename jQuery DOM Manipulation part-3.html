@@ -1,0 +1,70 @@
+<html>
+	<head>
+    	<title>jQuery DOM Manipulation part-3</title>
+        <link rel="stylesheet" href="css/selector_style.css">
+    </head>
+    <body>
+    	<h2 class="myheading" id="firstH2">jQuery DOM Manipulation part-3</h2>
+        
+         <button type="button" id="btn1">Append</button>
+         <button type="button" id="btn2">After</button>
+         <button type="button" id="btn3">Prepand</button>
+         <button type="button" id="btn4">Before</button>
+         <button type="button" id="btn5">Remove</button>
+         <button type="button" id="btn6">Empty</button>
+        
+        <div class="mydivs" id="div1">
+        	<p id="p1" class="myp">This is <b>paragraph</b> of first division</p>
+        </div>
+              
+    </body>
+    <script src="../Abhirva JavaScript/js/jquery.js" type="text/javascript"></script>
+    <script>
+	
+		$(document).ready(function() {
+			
+			
+				
+		    // append()
+        	$("#btn1").click(function()
+				{
+					$("#div1").append("<p>This is Append</p>");
+        		});
+			
+			// after()
+        	$("#btn2").click(function()
+				{
+					$("#div1").after("<p>This is After</p>");
+        		});
+					
+			// prepend()
+        	$("#btn3").click(function()
+				{
+					$("#div1").prepend("<p>This is Prepend</p>");
+        		});
+				
+			// before()
+        	$("#btn4").click(function()
+				{
+					$("#div1").before("<p>This is Before</p>");
+        		});
+				
+			// remove()
+        	$("#btn5").click(function()
+				{
+					$("#div1").remove();
+					//$("#div1").remove("#p1"); // remove by their id
+        		});
+				
+			// empty()
+        	$("#btn6").click(function()
+				{
+					$("#div1").empty("<p>This is Empty</p>");
+        		});						
+			
+		});
+		
+		
+    
+    </script>
+</html>

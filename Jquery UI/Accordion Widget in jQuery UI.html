@@ -1,0 +1,44 @@
+<html>
+	<head>
+    	<title>Accordion Widget in jQuery UI</title>
+        <link rel="stylesheet" href="css/selector_style.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css"/>
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css" />
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css" />
+    </head>
+    <body>
+    	
+        <div id="mydiv">
+        	<h2 class="myheading" id="firstH2">Accordion Widget in jQuery UI</h2>
+        </div>
+        <div id="panels">
+         	<h3>Abhirva Learning</h3>
+            <p>Abhirva learning is one of the largest tech educational channel in india.</p>
+            
+            <h3>Simple Learning</h3>
+            <p>Simple learning is an upcoming tech educational channel in india.<br>
+  				Simple learning was started 3 year back.          
+            </p>
+            
+            <h3>MKBBHO</h3>
+            <p>This is one of my favourite channels.</p>
+        </div>
+        
+             
+             
+    </body>
+   	<script src="js/jquery.js" type="text/javascript"></script>
+    <script src="jqueryui/jquery-ui.js" type="text/javascript"></script>
+    
+    <script>
+    	$("#panels").accordion({
+			    collapsible:true,
+				event:"click",
+				animate:300,
+				active:0,
+				heightstyle:true,
+				icons:{header:"ui-icon-plus",activeHeader:"ui-icon-minus"}
+			});
+    </script>
+</html>
+

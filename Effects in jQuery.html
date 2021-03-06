@@ -1,0 +1,52 @@
+<html>
+	<head>
+    	<title>Effects in jQuery</title>
+        <link rel="stylesheet" href="css/selector_style.css">
+    </head>
+    <body>
+    	<h2 class="myheading" id="firstH2">Effects in jQuery</h2>
+        
+         <button type="button" id="btn1">Slide Up</button>
+        <button type="button" id="btn2">Slide Down</button>
+        <button type="button" id="btn3">Slide Toggle</button>
+<br>
+        <p>This is paragraph of outside division</p>
+        
+        <div class="mydivs" id="firstdiv">
+        	<p>This is paragraph of first division</p>
+        </div>
+        
+        <div class="mydivs" id="seconddiv">
+        	<p>This is paragraph of second division</p>
+        </div>
+        
+        <div class="mydivs" id="thirddiv">
+        	<p>This is paragraph of third division</p>
+            <ul>
+        		<li>List Item 1</li>
+            	<li>List Item 2</li>
+            	<li>List Item 3</li>
+            	<li>List Item 4</li>
+        	</ul>
+        
+        </div>       
+    </body>
+    <script src="../Abhirva JavaScript/js/jquery.js" type="text/javascript"></script>
+    <script>
+		$(document).ready(function() {
+			
+        	$("#btn1").click(function()
+				{
+					$("#firstdiv").slideUp();	
+				});
+			$("#btn2").click(function()
+				{
+					$("#firstdiv").slideDown();	
+				}); 
+			$("#btn3").click(function()
+				{
+					$("#firstdiv").slideToggle();	 	   
+        		}); 
+		});
+    </script>
+</html>

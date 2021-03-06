@@ -1,0 +1,52 @@
+<html>
+	<head>
+    	<title>Callback and Chaining in jQuery Effects</title>
+        <link rel="stylesheet" href="css/selector_style.css">
+    </head>
+    <body>
+    	<h2 class="myheading" id="firstH2">Callback and Chaining in jQuery Effects</h2>
+        
+        <button type="button" id="btn1">Toggle</button>
+<br>
+        <p>This is paragraph of outside division</p>
+        
+        <div class="mydivs" id="firstdiv">
+        	<p>This is paragraph of first division</p>
+        </div>
+        
+        <div class="mydivs" id="seconddiv">
+        	<p>This is paragraph of second division</p>
+        </div>
+              
+    </body>
+    <script src="../Abhirva JavaScript/js/jquery.js" type="text/javascript"></script>
+    <script>
+	
+	/* Callback Function
+	
+		$(document).ready(function() {
+			
+        	$("#btn1").click(function()
+				{
+					$("#firstdiv").fadeToggle(5000,function(){
+						alert("Division is fadded");
+						});
+        		}); 
+		});
+		
+		*/
+		
+		// Chaining Function
+	
+		$(document).ready(function() {
+			
+        	$("#btn1").click(function()
+				{
+					$("#firstdiv").slideUp(1000).slideDown(1000).fadeOut(1000).fadeIn(1000);
+        		}); 
+		});
+		
+		
+    
+    </script>
+</html>

@@ -1,0 +1,61 @@
+<html>
+	<head>
+    	<title>jQuery DOM Manipulation part-4</title>
+        <link rel="stylesheet" href="css/selector_style.css">
+    </head>
+    <body>
+    	<h2 class="myheading" id="firstH2">jQuery DOM Manipulation part-4</h2>
+        
+         <button type="button" id="btn1">Add Class</button>
+         <button type="button" id="btn2">Remove Class</button>
+         <button type="button" id="btn3">Toggle Class</button>
+         <button type="button" id="btn4">CSS</button>
+         
+        <div class="mydivs" id="div1">
+        	<p id="p1" class="myp1">This is <b>paragraph</b> of first division</p>
+        </div>
+		
+        <div class="mydivs" id="div2">
+        	<p id="p2" class="myp2">This is <b>paragraph</b> of second division</p>
+        </div>
+              
+    </body>
+    <script src="../Abhirva JavaScript/js/jquery.js" type="text/javascript"></script>
+    <script>
+	
+		$(document).ready(function() {
+			
+			
+				
+		    // Add Class
+        	$("#btn1").click(function()
+				{
+					$("#div1").addClass("newdivclass");
+        		});
+			
+			// Remove Class
+        	$("#btn2").click(function()
+				{
+					$("#div1").removeClass("newdivclass newparaclass");
+        		});
+					
+			// Toggle Class
+        	$("#btn3").click(function()
+				{
+					$("#div1").toggleClass("newdivclass");
+        		});
+				
+			// CSS
+        	$("#btn4").click(function()
+				{
+					$("#div1").css("font-size","25px");
+        		});
+				
+							
+			
+		});
+		
+		
+    
+    </script>
+</html>

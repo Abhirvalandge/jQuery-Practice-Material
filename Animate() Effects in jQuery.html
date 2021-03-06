@@ -1,0 +1,52 @@
+<html>
+	<head>
+    	<title>Animate() Effects in jQuery</title>
+        <link rel="stylesheet" href="css/selector_style.css">
+    </head>
+    <body>
+    	<h2 class="myheading" id="firstH2">Animate() Effects in jQuery</h2>
+        
+        <button type="button" id="btn3">Animate CUBE</button>
+<br>
+        <p>This is paragraph of outside division</p>
+        
+        <div class="mydivs" id="firstdiv">
+        	<p>This is paragraph of first division</p>
+        </div>
+        
+        <div class="mydivs" id="seconddiv">
+        	<p>This is paragraph of second division</p>
+        </div>
+        
+        <div class="mydivs" id="thirddiv">
+        	<p>This is paragraph of third division</p>
+            <ul>
+        		<li>List Item 1</li>
+            	<li>List Item 2</li>
+            	<li>List Item 3</li>
+            	<li>List Item 4</li>
+        	</ul>
+        </div>   
+        <br>
+        <div class="mycube" id="cube">
+        	<p>CUBE</p>
+         </div>       
+    </body>
+    <script src="../Abhirva JavaScript/js/jquery.js" type="text/javascript"></script>
+    <script>
+		$(document).ready(function() {
+			
+        	$("#btn3").click(function()
+				{
+					$("#cube").animate({
+						     
+							 left:'150px',
+							 opacity:'1',
+							 width:'100px',
+							 height:'100px',
+						
+						},1000)	 	   
+        		}); 
+		});
+    </script>
+</html>
